@@ -31,7 +31,7 @@ users.push(3)
 console.log(`Users Tuple is Modified to this Array : ${users}`);
 
 // enums
-enum Size {
+const enum Size {
     small,
     medium,
     large
@@ -52,6 +52,7 @@ const subtract = function (x: number, y: number): void {
 subtract(5, 3)
 type AddFuncType = typeof add | ((numA: number, numB: number) => void); // Union type
 let addFuncType: AddFuncType = add
+console.log(addFuncType)
 addFuncType(2, 3)
 addFuncType = subtract
 addFuncType(5, 3)

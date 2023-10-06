@@ -21,14 +21,8 @@ let users = [1, 'Abhinav'];
 console.log(`Original users Tuple was : ${users} `);
 users.push(3);
 console.log(`Users Tuple is Modified to this Array : ${users}`);
-var Size;
-(function (Size) {
-    Size[Size["small"] = 0] = "small";
-    Size[Size["medium"] = 1] = "medium";
-    Size[Size["large"] = 2] = "large";
-})(Size || (Size = {}));
-console.log(`Large Size is : ${Size.large}`);
-let mySize = Size.medium;
+console.log(`Large Size is : ${2}`);
+let mySize = 1;
 console.log(`My Size is : ${mySize}`);
 function add(a, b) {
     return a + b;
@@ -39,6 +33,7 @@ const subtract = function (x, y) {
 };
 subtract(5, 3);
 let addFuncType = add;
+console.log(addFuncType);
 addFuncType(2, 3);
 addFuncType = subtract;
 addFuncType(5, 3);
